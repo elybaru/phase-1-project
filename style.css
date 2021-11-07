@@ -1,0 +1,168 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.5em;
+    box-sizing: border-box;
+    color: rgb(24, 23, 23);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    filter: sepia(50%);
+    z-index: 1;
+}
+
+#main-header {
+    text-align: center;
+
+}
+
+#logo {
+    max-width: 100px;
+}
+
+.info-div {
+    display: inline-block;
+    width: 60%;
+
+}
+
+.park-image {
+    display: inline-block;
+    width: 40%;
+
+}
+
+#form {
+    display: none
+}
+
+.activities {
+    max-height: 100px;
+    overflow: scroll
+}
+
+#favorites-camps {
+    display: flex;
+    overflow: auto;
+    text-align: left;
+}
+
+#favorites-parks {
+    display: flex;
+    overflow: auto;
+    text-align: left;
+}
+
+.fav-camps-img {
+    max-height: 100px;
+}
+
+.fav-parks-img {
+    max-height: 100px;
+}
+
+.fav-parks-div, .favorite-camps-div, .fav-camps-div {
+    padding: 0 10px;
+}
+
+.fav-parks-div a, .favorite-camps-div a {
+    display: block;
+}
+
+
+a {
+    color: seagreen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+#favorites-parks button, #favorites-camps button {
+    background:red;
+    color: white;
+    padding: 0;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    border: 0px solid white;
+    position: relative;
+    top: 10px;
+    left: -5px;
+    z-index: 20;
+}
+
+#favorites-parks, #favorites-camps {
+    padding: 20px 0;
+    background-color: rgb(212, 210, 207);
+    margin: 10px 0;
+
+}
+
+.favorites-parks-div img, .favorites-camps-div img {
+    display: block;
+}
+
+.favorites-parks-div h3, .favorites-camps-div h3 {
+    margin-left: 15px;
+}
+
+.favorites-parks-div h4, .favorites-camps-div h4 {
+    padding: 0;
+    margin: 5px 0;
+    width: 100px;
+}
+
+#search p {
+    font-weight: bold;
+}
+
+#search {
+    text-align: center;
+    background: rgb(212, 210, 207);
+    padding: 15px 15px 30px 15px;
+}
+
+#form {
+    margin: 15px 0;
+}
+
+.search-result {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid gray;
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+
+.search-result h3{
+    margin: 0;
+}
+
+.info-div {
+    padding-left: 20px;
+}
+
+.info-div button {
+    background-color: seagreen;
+    color: white;
+    border: 0px solid white;
+    height: 30px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.activities {
+    font-weight: bold;
+}
+
+.activities li {
+    font-weight: normal;
+    list-style: none;
+    padding-left: 10px;
+}
+

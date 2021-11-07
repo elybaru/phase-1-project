@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-header">
+        <h1>National Park Explorer</h1>
+        <img id="logo" src="https://www.nps.gov/glac/learn/news/images/arrowhead.jpg">
+        <h2>An interactive site to discover national parks and campgrounds</h2>
+    </div>
+
+
+    <div id="search">
+        <p>Select search</p>
+        <form id="radio-form">
+            <input type="radio" id="radio-parks" data-name="Parks" name="radio-type" value="parks">
+            <label for "parks">Search Parks</label>
+            <input type="radio" id="radio-campgrounds" data-name="Campgrounds" name="radio-type" value="campgrounds">
+            <label for "campgrounds">Search Campgrounds</label>
+        </form>
+
+        <form id="form">
+            <label id="search-description" for="search-parks">Search for parks</label>
+            <input type="text" id="search-input">
+            <button id="search-button">Search parks</button>
+        </form>
+
+    </div>
+
+
+
+
+    <div id="favorites-div">
+        <div class="favorites-parks-div">
+            <h3>Favorite Parks</h3>
+            <div id="favorites-parks"></div>
+        </div>
+        <div class="favorites-camps-div">
+            <h3>Favorite Campgrounds</h3>
+            <div id="favorites-camps"></div>
+        </div>
+    </div>
+
+    <div id="search-results">
+    </div>
+
+
+
+    <script type='text/javascript' src='config.js'></script>
+    <script src="index.js"></script>
+</body>
+
+
+
+
+</html>
