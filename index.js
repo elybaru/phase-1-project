@@ -81,13 +81,13 @@ function fetchCampgrounds(event) {
         })
 }
 
-// Strip response one layer
+// Strip parks response one layer
 function displayParks(data) {
     console.log("In display test")
     dataTest = data.data
     renderParks(dataTest)
 }
-
+// Strip campgrounds response one layer
 function displayCampgrounds(data) {
     console.log("In display test")
     dataTest = data.data
@@ -224,6 +224,7 @@ function deleteFav(type) {
         })
             .then(resp => {
                 if (resp.status === 200) {
+                    // parentNode of event.target (delete button) is fav-{type}-div
                     event.target.parentNode.remove()
                 }
                 else {
@@ -295,17 +296,3 @@ function renderParks(dataTest) {
     })
 
 }
-
-
-// hide key in .env
-
-// "./env.apiKey
-
-// use gitIgnore, add .env to gitIgnore
-// in .env declare environment variable
-
-
-
-
-
-

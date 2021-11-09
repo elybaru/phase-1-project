@@ -1,4 +1,24 @@
 {
-  "camps": [],
-  "parks": []
+  "camps": [
+    {
+      "name": "Bridalveil Creek Campground",
+      "image": "https://www.nps.gov/common/uploads/structured_data/F2FB2779-A1A5-985F-2488256AA422403C.jpg",
+      "url": "https://www.nps.gov/yose/planyourvisit/bvcamp.htm",
+      "id": 1
+    },
+    {
+      "name": "Hodgdon Meadow Campground",
+      "image": "https://www.nps.gov/common/uploads/structured_data/F19DF728-CEA0-8054-F00910A7A4406E97.jpg",
+      "url": "https://www.nps.gov/yose/planyourvisit/hodgdoncamp.htm",
+      "id": 2
+    }
+  ],
+  "parks": [
+    {
+      "name": "Chiricahua",
+      "image": "https://www.nps.gov/common/uploads/structured_data/9F5DFDFD-9FE4-883F-99DC9D5CBACCA397.jpg",
+      "url": "https://www.nps.gov/chir/index.htm",
+      "id": 1
+    }
+  ]
 }

@@ -4,16 +4,19 @@ This is my phase 1 project for the Software Engineering course at Flatiron Schoo
 
 # Installation
 
-In order for this page to run properly, you will need to use NPM to run a mock server with the db.json file:
+In order for this page to run properly, I use NPM to run a mock server with the db.json file:
 
 https://www.npmjs.com/package/json-server
 
-Once the NPM package is installed, initialize the local db.json with the following command in the terminal:
+Once the NPM package is installed, the local db.json is initialized with the following command in the terminal:
 
 # json-server --watch db.json
 
-You will then be able to make POST and DELETE requests for campsites and parks that you save to a favorites list. 
+THis will then allow POST and DELETE requests for campsites and parks that you save to a favorites list. 
 
+# API Key
+
+The API Key is hidden with gitignore, and is not exposed to GitHub. 
 
 
 
