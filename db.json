@@ -1,24 +1,36 @@
 {
   "camps": [
     {
-      "name": "Bridalveil Creek Campground",
-      "image": "https://www.nps.gov/common/uploads/structured_data/F2FB2779-A1A5-985F-2488256AA422403C.jpg",
-      "url": "https://www.nps.gov/yose/planyourvisit/bvcamp.htm",
+      "name": "Bridge Bay Campground",
+      "image": "https://www.nps.gov/common/uploads/structured_data/3C85386A-1DD8-B71B-0B318D416ECCFD35.jpg",
+      "url": "https://www.nps.gov/yell/planyourvisit/bridgebaycg.htm",
       "id": 1
     },
     {
-      "name": "Hodgdon Meadow Campground",
-      "image": "https://www.nps.gov/common/uploads/structured_data/F19DF728-CEA0-8054-F00910A7A4406E97.jpg",
-      "url": "https://www.nps.gov/yose/planyourvisit/hodgdoncamp.htm",
+      "name": "Canyon Campground",
+      "image": "https://www.nps.gov/common/uploads/structured_data/7F2AF058-1DD8-B71B-0BAA7C18ECC643DC.jpg",
+      "url": "https://www.nps.gov/yell/planyourvisit/canyoncg.htm",
       "id": 2
+    },
+    {
+      "name": "North Rim Campground",
+      "image": "https://www.nps.gov/common/uploads/structured_data/6AB204E4-0295-BD9D-1ED2AC95CE060AF8.jpg",
+      "url": "https://www.nps.gov/grca/planyourvisit/cg-nr.htm",
+      "id": 3
     }
   ],
   "parks": [
     {
-      "name": "Chiricahua",
-      "image": "https://www.nps.gov/common/uploads/structured_data/9F5DFDFD-9FE4-883F-99DC9D5CBACCA397.jpg",
-      "url": "https://www.nps.gov/chir/index.htm",
+      "name": "Ala Kahakai",
+      "image": "https://www.nps.gov/common/uploads/structured_data/3C86C7EB-1DD8-B71B-0BF2A10341617580.jpg",
+      "url": "https://www.nps.gov/alka/index.htm",
       "id": 1
+    },
+    {
+      "name": "Hawaiʻi Volcanoes",
+      "image": "https://www.nps.gov/common/uploads/structured_data/C4E8415A-08E5-5976-833F494FFCA3FFE6.jpg",
+      "url": "https://www.nps.gov/havo/index.htm",
+      "id": 2
     }
   ]
 }

@@ -3,27 +3,26 @@
 const key = config.API_KEY
 const BASE_URL = "https://developer.nps.gov/api/v1/"
 
+// Globally-scoped array for fetch data
 let dataTest = []
+
+// DOM elements
 const searchInput = document.getElementById("search-input")
 const searchResults = document.getElementById("search-results")
 const campFavorites = document.getElementById("favorite-campgrounds")
 const parkFavorites = document.getElementById("favorite-parks")
 const form = document.getElementById("form")
-
 const parksRadio = document.getElementById("radio-parks")
 const campgroundsRadio = document.getElementById("radio-campgrounds")
 const radioForm = document.getElementById("radio-form")
-radioForm.addEventListener("change", toggleSearch)
-
-// parksRadio.addEventListener("change", toggleSearch)
-// campgroundsRadio.addEventListener("change", toggleSearch)
-
 let searchDescription = document.getElementById("search-description")
 let searchButton = document.getElementById("search-button")
 
+// Event listener for radio button
+radioForm.addEventListener("change", toggleSearch)
+
+// Toggle search
 function toggleSearch(event) {
-
-
     searchDescription.innerText = `Search ${event.target.dataset.name}`
     searchButton.innerText = `Search ${event.target.dataset.name}`
     // dataset allows read access to the data-name attribute in the HTML file
@@ -55,14 +54,12 @@ fetchFavs("parks");
 function fetchParks(event) {
     event.preventDefault()
     let searchInputString = event.target[0].value
-    console.log(searchInputString)
 
 
     fetch(`${BASE_URL}parks?q=${searchInputString}&api_key=${key}`)
 
         .then(resp => resp.json())
         .then(data => {
-            console.log(data)
             displayParks(data)
         })
 }
@@ -71,30 +68,25 @@ function fetchParks(event) {
 function fetchCampgrounds(event) {
     event.preventDefault()
     let searchInputString = event.target[0].value
-    console.log(searchInputString)
 
     fetch(`${BASE_URL}campgrounds?q=${searchInputString}&api_key=${key}`)
 
         .then(resp => resp.json())
         .then(data => {
-            console.log(data)
             displayCampgrounds(data)
         })
 }
 
 // Strip parks response one layer
 function displayParks(data) {
-    console.log("In display test")
     dataTest = data.data
     renderParks(dataTest)
 }
 // Strip campgrounds response one layer
 function displayCampgrounds(data) {
-    console.log("In display test")
     dataTest = data.data
     renderCampgrounds(dataTest)
 }
-
 
 
 // Renders Campground Data 
@@ -173,7 +165,6 @@ function postFav(type, element) {
     })
         .then(resp => resp.json())
         .then(favObj => {
-            console.log(favObj)
             renderFav(type, favObj)
 
         })
@@ -214,7 +205,7 @@ function renderFav(type, favObj) {
 // Deletes a fav camp or park
 function deleteFav(type) {
     return (event) => {
-        event.preventDefault()
+        // event.preventDefault()
         console.log(event.target.id)
 
         fetch(`http://localhost:3000/${type}/${event.target.id}`, {
@@ -261,13 +252,6 @@ function renderParks(dataTest) {
         p3.innerText = `Activities`
         p3.className = "activities"
 
-        // const activities = element.activities.map(element => element.name).map(name => {
-        //     let li = document.createElement("li")
-        //     li.innerText = name
-        //     return li
-        // })
-        // p3.append(activities)
-
         element.activities.forEach(element => {
             let li = document.createElement("li")
             li.innerText = element.name
@@ -297,3 +281,4 @@ function renderParks(dataTest) {
     })
 
 }
+
