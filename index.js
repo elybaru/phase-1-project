@@ -1,4 +1,5 @@
 
+// Reference to API key
 const key = config.API_KEY
 const BASE_URL = "https://developer.nps.gov/api/v1/"
 
